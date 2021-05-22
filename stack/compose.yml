@@ -24,7 +24,7 @@ services:
       - common
     deploy:
       mode: replicated
-      replicas: 5
+      replicas: 4
   redis:
     image: sloopstash/redis:v1
     command: "/usr/bin/supervisord -c /etc/supervisord.conf"
